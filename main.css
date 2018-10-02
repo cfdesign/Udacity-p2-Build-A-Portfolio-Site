@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+@import url('https://fonts.googleapis.com/css?family=Heebo:100');
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font: 100 12px Heebo;
+  color: #a0a0a0;
+  padding: 2em 1em;
+  max-width: 1000px;
+  margin: auto; 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0; 
+  font-weight: 100;
+}
+
+header,
+footer,
+section,
+div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header-inner {
+  width: 100%;
+  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+  border-bottom: 2px solid #a0a0a0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-logo {
+  margin: 1.2em 0 0 0;
+  max-width: 74px;
+  max-height: 74px;
+}
+
+.title-wrapper {
+  position: relative;
+  margin: 0 0 0 1em;
+}
+
+.cf-logo {
+  position: absolute;
+  width: 3.6em;
+  top: 0;
+  right: 0.05em;
+}
+
+.header-title-name {
+  font: 2.65em Questrial;
+  margin: 0 0 0 0.15em;
+  color: #89b6e2;
+}
+
+.header-title-surname {
+  font: 6em Questrial;
+  line-height: 0.9em;
+  color: #89b6e2;
+}
+
+.header-title-desc {
+  margin: 0 0.05em 0.1em 0;
+  font-size: 1.6em;
+  line-height: 0.8em;
+  text-align: right;
+}
+
+/*
+ *
+ * Main
+ *
+*/
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*
+ *
+ * Content
+ *
+ */
+
+
+/*
+ *
+ * Hero
+ *
+*/
+
+.hero-container {
+  margin: 3em 0;
+}
+
+.hero-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hero {
+  width: 49.5%;
+  margin: 0 0 1% 0;
+  text-align: center;
+  box-sizing: border-box;
+ }
+
+.hero-thumbnail {
+  margin: 2em 0 0 0;
+  width: 80%;
+}
+
+.hero h3 {
+  margin: 1em 0;
+  font-size: 1.5em;
+}
+
+.retouching {
+  background-color: #f8b2a6;
+  color: #f58b7a;
+}
+
+.graphics {
+  background-color: #98dcd1;
+  color: #68ccbc;
+}
+
+.development {
+  background-color: #c5bbd7;
+  color: #a899c3;
+}
+
+.ux {
+  background-color: #99aeba;
+  color: #668697;
+}
+
+/*
+ *
+ * featured
+ *
+ */
+
+h4 {
+  font-size: 1.5em;
+  margin: 0 0 0.5em;
+}
+
+.featured-container {
+  margin: 3em 0;
+}
+
+.featured {
+  max-width: 500px;
+  text-align: center;
+  font-size: 1.3333333333em;
+}
+
+.featured-title {
+  font-size: 1.25em;
+}
+
+.featured  a {
+  text-decoration: none;
+  color: #a0a0a0;
+  display: block;
+}
+
+.featured-thumbnail {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.featured:hover .featured-thumbnail {
+  opacity: 1;
+}
+
+.featured p {
+  margin: 0.2em 0 1.4em 0;
+}
+
+/*
+ *
+ * Footer
+ *
+*/
+
+footer {
+  border-top: 1px solid #a0a0a0;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #a0a0a0;
+  padding: 1.5em;
+}
+
+/*
+ *
+ * Responsive
+ *
+ *
+ */
+
+@media screen and (min-width: 340px) {
+  .header-inner {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 451px) {
+  body {
+    padding: 4em 1em;
+  }
+
+  .hero {
+    width: 49.75%;
+    margin: 0 0 0.5% 0;
+  }
+
+  .featured-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .featured {
+    width: 48.580786026%;
+   }
+}
+
+@media screen and (min-width: 710px) {
+  .hero {
+    width: 24.75%;
+    margin: 0;
+   }
+
+  .featured {
+    width: 31.441048035%;
+   }
+}
